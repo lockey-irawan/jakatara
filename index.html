@@ -22,7 +22,7 @@
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-15px); }
         }
-        .animate-float { animation: float 3s ease-in-out infinite; }
+        .animate-float { animation: float 2s ease-in-out infinite; }
         
         /* Menyembunyikan elemen sebelum Tailwind dimuat penuh */
         .screen { display: none; }
@@ -42,7 +42,7 @@
             </h1>
             <p class="text-lg text-slate-600 mb-8 font-medium">Kenali pesona dan kekayaan budaya Indonesia melalui petualangan seru bersama @Jakatara!</p>
             <button id="start-btn" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:shadow-orange-500/50 transform hover:-translate-y-1 transition-all duration-300">
-                Mulai Bermain 🚀
+                Mulai Bermain
             </button>
         </div>
     </div>
@@ -61,6 +61,8 @@
             
             <div class="w-[150px] hidden md:block"></div>
         </div>
+
+        <br/><br/><br/><br/>
         
         <div class="relative w-full max-w-6xl mx-auto border-8 border-white rounded-3xl shadow-2xl overflow-hidden bg-sky-300 group">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Indonesian_provinces_blank.svg" alt="Peta Indonesia" class="w-full block object-contain opacity-90 group-hover:opacity-100 transition-opacity">
@@ -68,7 +70,7 @@
             <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 20%; left: 10%; animation-delay: 0.1s;" onclick="showInfo(0)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 35%; left: 18%; animation-delay: 0.3s;" onclick="showInfo(1)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 68%; left: 30%; animation-delay: 0.5s;" onclick="showInfo(2)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 72%; left: 36%; animation-delay: 0.2s;" onclick="showInfo(3)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 75%; left: 45%; animation-delay: 0.7s;" onclick="showInfo(4)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 80%; left: 55%; animation-delay: 0.4s;" onclick="showInfo(5)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 35%; left: 45%; animation-delay: 0.6s;" onclick="showInfo(6)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 55%; left: 55%; animation-delay: 0.8s;" onclick="showInfo(7)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 45%; left: 75%; animation-delay: 0.9s;" onclick="showInfo(8)">📍</div> <div class="absolute text-3xl md:text-5xl cursor-pointer hover:scale-125 transition-transform duration-300 drop-shadow-xl z-10 animate-bounce" style="top: 48%; left: 85%; animation-delay: 0.2s;" onclick="showInfo(9)">📍</div> </div>
 
         <button id="quiz-btn" class="hidden mt-8 bg-sky-500 hover:bg-sky-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:shadow-sky-500/50 transform hover:-translate-y-1 transition-all duration-300 animate-pulse" onclick="startQuiz()">
-            Lanjut ke Kuis 🎯
+            Lanjut ke Kuis
         </button>
 
         <div id="modal-overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-40 opacity-0 invisible transition-all duration-300" onclick="closeInfo()"></div>
