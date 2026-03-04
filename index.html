@@ -247,6 +247,36 @@
             currentQuestionIndex++;
             loadQuestion();
         }
+
+        // --- KONTROL MUSIK (MUTE/UNMUTE) ---
+        function toggleMusic() {
+            const bgMusic = document.getElementById('bg-music');
+            const muteBtn = document.getElementById('mute-btn');
+            
+            // Jika musik terhenti (misalnya karena terblokir autoplay), paksa putar
+            if (bgMusic.paused) {
+                bgMusic.play().catch(error => console.log("Menunggu interaksi user"));
+                bgMusic.muted = false;
+                muteBtn.innerText = "🔊";
+            } else {
+                // Balikkan status Mute/Unmute
+                bgMusic.muted = !bgMusic.muted;
+                
+                // Ubah ikon tombol sesuai status
+                if (bgMusic.muted) {
+                    muteBtn.innerText = "🔇";
+                } else {
+                    muteBtn.innerText = "🔊";
+                }
+            }
+        }        
     </script>
+    <button id="mute-btn" class="fixed bottom-6 right-6 z-50 bg-white hover:bg-slate-100 text-2xl w-14 h-14 flex items-center justify-center rounded-full shadow-2xl border-4 border-sky-200 transition-transform transform hover:scale-110" onclick="toggleMusic()">
+        🔊
+    </button>
+
+    <audio id="bg-music" loop autoplay>
+        <source src="music/bg.mp3" type="audio/wav">
+    </audio>
 </body>
 </html>
